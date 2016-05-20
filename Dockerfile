@@ -5,7 +5,7 @@ RUN echo 'This is a simple ruby app'
 
 WORKDIR /home
 COPY Gemfile /home
-COPY foo.rb /home
+COPY twitter.rb /home
 RUN gem install bundler
 RUN bundle
-CMD ruby foo.rb
+CMD ruby twitter.rb
