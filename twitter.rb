@@ -10,5 +10,5 @@ client = Twitter::REST::Client.new do |config|
 end
 
 tweets = client.user_timeline("_sprconsulting")
-puts tweets.first
+puts tweets.first.text
 
